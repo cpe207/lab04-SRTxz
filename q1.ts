@@ -1,5 +1,11 @@
 function typeChecker(a, b) {
-  /* Your code here */
+  if (typeof a == 'string' && typeof b == 'string') {
+    return "I LOVE YOU";
+  }
+  if (typeof a == 'number' && typeof b == 'number') {
+    return a + b;
+  }
+  else return "NOT MATCHED";
 }
 
 //Test cases
@@ -15,3 +21,4 @@ console.log(typeChecker(a2, b2));
 console.log(typeChecker(a3, b3));
 
 module.exports = typeChecker;
+// ศรัณย์ ไม้หอม 660610796
